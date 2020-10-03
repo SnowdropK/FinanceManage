@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+html,
+body {
+    background: #140e35;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+	.moon{
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	}
+
+
+	.moon {
+	    width: 120px;
+	    height: 120px;
+	    -moz-border-radius: 100%;
+	    -webkit-border-radius: 100%;
+	    border-radius: 100%;
+	    background: #fff;
+	    box-shadow: 0px 20px 50px rgba(157, 229, 253, 0.59);
+	}
+	
+	.moon ul li {
+	    list-style: none;
+	    background: -moz-radial-gradient(circle, #ffffff 0%, rgba(0, 0, 0, 0) 90%);
+	    background: -webkit-radial-gradient(circle, #ffffff 0%, rgba(0, 0, 0, 0) 90%);
+	    background: radial-gradient(circle, #ffffff 0%, rgba(0, 0, 0, 0) 90%);
+	    position: absolute;
+	    -moz-border-radius: 100%;
+	    -webkit-border-radius: 100%;
+	    border-radius: 100%;
+	    opacity: 0.2;
+	    -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	    -moz-transition: all 0.5s ease;
+	    -o-transition: all 0.5s ease;
+	    -webkit-transition: all 0.5s ease;
+	    transition: all 0.5s ease;
+	    -moz-animation: moon-glow 6s ease infinite;
+	    -webkit-animation: moon-glow 6s ease infinite;
+	    animation: moon-glow 6s ease infinite;
+	}
+	.moon li:nth-child(1) {
+	    width: 120%;
+	    height: 120%;
+	    left: -10px;
+	    top: -10px;
+	}
+	.moon li:nth-child(2) {
+	    width: 140%;
+	    height: 140%;
+	    left: -22.5px;
+	    top: -22.5px;
+	    -moz-animation-delay: 1s;
+	    -webkit-animation-delay: 1s;
+	    animation-delay: 1s;
+	}
+	.moon li:nth-child(3) {
+	    width: 160%;
+	    height: 160%;
+	    left: -35px;
+	    top: -35px;
+	    -moz-animation-delay: 2s;
+	    -webkit-animation-delay: 2s;
+	    animation-delay: 2s;
+	}
+
+	@-webkit-keyframes $animationName {
+	    0% {
+	        -moz-transform: scale(1);
+	        -ms-transform: scale(1);
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+	    }
+	    50% {
+	        -moz-transform: scale(1.1);
+	        -ms-transform: scale(1.1);
+	        -webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	    }
+	}
+	@-moz-keyframes moon-glow {
+	    0% {
+	        -moz-transform: scale(1);
+	        -ms-transform: scale(1);
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+	    }
+	    50% {
+	        -moz-transform: scale(1.1);
+	        -ms-transform: scale(1.1);
+	        -webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	    }
+	}
+	@-ms-keyframes moon-glow {
+	    0% {
+	        -moz-transform: scale(1);
+	        -ms-transform: scale(1);
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+	    }
+	    50% {
+	        -moz-transform: scale(1.1);
+	        -ms-transform: scale(1.1);
+	        -webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	    }
+	}
+	@keyframes moon-glow {
+	    0% {
+	        -moz-transform: scale(1);
+	        -ms-transform: scale(1);
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+	    }
+	    50% {
+	        -moz-transform: scale(1.1);
+	        -ms-transform: scale(1.1);
+	        -webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+	    }
+	}
+	@-webkit-keyframes $animationName {
+	    0% {
+	        height: 20px;
+	        top: -7px;
+	    }
+	    50% {
+	        height: 10px;
+	        top: -3px;
+	    }
+	    100% {
+	        height: 20px;
+	        top: -7px;
+	    }
+	}
+
+	</style>
+</head>
+<body>
+	
+	<div class="moon">
+	    <ul>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	    </ul>
+	</div>
+
+	
+</body>
+</html>
